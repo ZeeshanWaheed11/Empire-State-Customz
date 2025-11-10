@@ -522,42 +522,36 @@ main {
 }
 
 .service-selector {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
   margin-top: 1.5rem;
 }
 
 .service-option {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
   border: 1px solid rgba(15, 17, 21, 0.12);
-  border-radius: 28px;
-  padding: 1.2rem 1.5rem 1.1rem;
+  border-radius: 24px;
+  padding: 1rem 1.5rem;
   background: #fefefe;
-  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  display: block;
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  text-align: left;
 }
 
-.service-option::before {
-  content: "";
-  width: 48px;
-  height: 48px;
-  border-radius: 16px;
-  background: var(--soft-gray);
-  flex-shrink: 0;
-  box-shadow: inset 0 0 0 1px rgba(15, 17, 21, 0.05);
-}
-
-.service-option-content {
-  flex: 1;
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
 }
 
 .service-option h3 {
-  margin: 0.25rem 0 0.35rem;
+  margin: 0.35rem 0;
   font-size: 1.15rem;
 }
 
-.service-option p {
+.service-option p,
+.service-body {
   margin: 0;
   color: rgba(15, 17, 21, 0.65);
 }
@@ -566,8 +560,19 @@ main {
 .service-option:hover {
   border-color: var(--accent);
   background: #fff;
-  transform: translateX(6px);
-  box-shadow: 0 16px 40px rgba(15, 17, 21, 0.08);
+  transform: translateX(4px);
+}
+
+.service-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-top: 0;
+}
+
+.service-option.active .service-body {
+  max-height: 320px;
+  margin-top: 0.35rem;
 }
 
 .toggle-icon {
@@ -595,7 +600,6 @@ main {
 .service-option.active .toggle-icon {
   border-color: var(--accent);
   color: var(--accent);
-  transform: rotate(90deg);
 }
 
 .service-option.active .toggle-icon::before {
@@ -723,15 +727,15 @@ main {
 .site-footer {
   background: #f4f5f7;
   border-radius: 40px 40px 0 0;
-  padding: 3rem 4vw;
+  padding: 3rem 5vw;
   display: grid;
-  grid-template-columns: 1.2fr 2fr;
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
 }
 
 .footer-links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
 }
 
@@ -962,11 +966,6 @@ body.enable-animations .is-visible {
   .service-option {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .service-option::before {
-    width: 40px;
-    height: 40px;
   }
 
   .split-text ul {
