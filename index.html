@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Detailing Studio</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement" data-animate>
+      <span>Book a car wash with the city's top-rated detail specialists.</span>
+      <button class="pill-btn">Book Now</button>
+    </div>
+
+    <header class="site-header" data-animate>
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <strong>Empire State Customz</strong>
+      </div>
+      <nav class="nav-links" id="primary-navigation" data-nav-menu>
+        <a href="#home" class="is-active" data-nav-link>Home</a>
+        <a href="#about" data-nav-link>About</a>
+        <a href="#services" data-nav-link>Services</a>
+        <a href="#packages" data-nav-link>Packages</a>
+        <a href="#clients" data-nav-link>Reviews</a>
+        <a href="#contact" data-nav-link>Contact</a>
+        <a href="#packages" class="nav-link-cta mobile-only" data-nav-link>Manage Membership</a>
+      </nav>
+      <div class="nav-backdrop" data-nav-backdrop></div>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        data-menu-toggle
+      >
+        <span class="line line-top"></span>
+        <span class="line line-middle"></span>
+        <span class="line line-bottom"></span>
+      </button>
+      <button class="ghost-btn">Manage Membership</button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content" data-animate>
+          <p class="eyebrow">Sydney · Since 2012</p>
+          <div class="hero-headline">
+            <span>CAR</span>
+            <span>DETAILING</span>
+          </div>
+          <p class="hero-subtitle">
+            Expert car detailing: from luxury brands to your everyday ride. Fully
+            mobile teams or at our flagship studio.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-btn">Book Wash</button>
+            <button class="video-btn">Watch Studio Tour</button>
+          </div>
+        </div>
+
+        <div class="hero-image" aria-hidden="true"></div>
+      </section>
+
+      <section class="intro" data-animate>
+        <div class="intro-text">
+          <p class="eyebrow">Empire State Customz</p>
+          <h2>Expert Car Detailing: From Luxury Brands To Your Everyday Ride.</h2>
+          <p class="intro-description">
+            From ceramic coatings to paint protection film, every build is handled
+            with studio-level focus so you get the same show-car finish we deliver
+            to luxury fleets and everyday drivers alike.
+          </p>
+          <div class="intro-badges">
+            <span>Vinyl Color Change</span>
+            <span>Car Detailing</span>
+            <span>Ceramic Coatings</span>
+            <span>Paint Protection Film</span>
+            <span>Paint Correction</span>
+          </div>
+          <div class="intro-cta">
+            <button class="primary-btn">Book A Detail</button>
+            <button class="video-btn outline">View Portfolio</button>
+          </div>
+        </div>
+        <div class="intro-highlight">
+          <div class="intro-panel spotlight">
+            <p class="panel-label">Decade of Craft</p>
+            <p class="panel-value">10+ Years</p>
+            <p class="panel-text">Premium wraps &amp; ceramic systems engineered for Sydney streets.</p>
+          </div>
+          <div class="intro-panel rating-panel">
+            <div>
+              <p class="panel-label">Client Rating</p>
+              <p class="panel-value">4.9</p>
+              <p class="panel-text">Consistent five-star feedback for reliability and finish.</p>
+            </div>
+            <div class="avatar-stack" aria-label="Happy clients">
+              <img src="https://i.pravatar.cc/70?img=13" alt="Client photo" />
+              <img src="https://i.pravatar.cc/70?img=28" alt="Client photo" />
+              <img src="https://i.pravatar.cc/70?img=17" alt="Client photo" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="split about-section" id="about" data-animate>
+        <div class="split-text">
+          <p class="eyebrow">About Us</p>
+          <h2>Reliable &amp; Honest</h2>
+          <p>
+            Empire State Customz finishes each project on schedule and with the
+            highest level of quality. We treat every build as if it were our own.
+          </p>
+          <p>
+            With a focus on personalized service, competitive rates, and customer
+            satisfaction, we’re always striving to meet and exceed expectations.
+          </p>
+          <ul>
+            <li>Personalized service plans</li>
+            <li>Competitive, transparent rates</li>
+            <li>Customer-first communication</li>
+            <li>Quality guaranteed on every panel</li>
+          </ul>
+          <div class="contact-chips">
+            <span>On-schedule delivery</span>
+            <span>Client satisfaction at the core</span>
+          </div>
+        </div>
+        <div class="split-media">
+          <img
+            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
+            alt="Car being washed"
+          />
+        </div>
+      </section>
+
+      <section class="services-detail" id="services" data-animate>
+        <div class="services-info">
+          <p class="eyebrow">Premium Services</p>
+          <h2>Services we provide</h2>
+          <p>
+            Designed services like no other detailing team—full vinyl labs, ceramic coating bays, and mobile crews ready for every finish.
+          </p>
+          <div class="service-selector">
+            <button
+              class="service-option active"
+              type="button"
+              data-service-option
+              data-image="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1400&q=80"
+              data-alt="Vinyl color change wrap"
+            >
+              <div class="service-header">
+                <div>
+                  <p class="tag">Vinyl Color Change</p>
+                  <h3>Professional, timely, efficient transformations.</h3>
+                </div>
+                <span class="toggle-icon" aria-hidden="true"></span>
+              </div>
+              <p class="service-body">
+                Empire State Customz is committed to wrapping and restyling with precision so you’re satisfied every step of the way.
+              </p>
+            </button>
+
+            <button
+              class="service-option"
+              type="button"
+              data-service-option
+              data-image="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1400&q=80"
+              data-alt="Interior and exterior detailing"
+            >
+              <div class="service-header">
+                <div>
+                  <p class="tag">Car Detailing</p>
+                  <h3>Interior and exterior perfection.</h3>
+                </div>
+                <span class="toggle-icon" aria-hidden="true"></span>
+              </div>
+              <p class="service-body">
+                We cater to each client’s needs, ensuring the elite results you need and deserve for every ride.
+              </p>
+            </button>
+
+            <button
+              class="service-option"
+              type="button"
+              data-service-option
+              data-image="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80"
+              data-alt="Ceramic coating application"
+            >
+              <div class="service-header">
+                <div>
+                  <p class="tag">Ceramic Coatings</p>
+                  <h3>Professionalism. Efficiency. Exceptional gloss.</h3>
+                </div>
+                <span class="toggle-icon" aria-hidden="true"></span>
+              </div>
+              <p class="service-body">
+                Our experience and skills tackle every coating job with streamlined processes and proven shine.
+              </p>
+            </button>
+
+            <button
+              class="service-option"
+              type="button"
+              data-service-option
+              data-image="https://images.unsplash.com/photo-1514315384763-ba401779410f?auto=format&fit=crop&w=1400&q=80"
+              data-alt="Paint protection film install"
+            >
+              <div class="service-header">
+                <div>
+                  <p class="tag">Paint Protection Film</p>
+                  <h3>Why PPF? Because protection looks incredible.</h3>
+                </div>
+                <span class="toggle-icon" aria-hidden="true"></span>
+              </div>
+              <p class="service-body">
+                We keep rock chips away and finish options on point—gloss or stealth—for either partial or full-body coverage.
+              </p>
+            </button>
+
+            <button
+              class="service-option"
+              type="button"
+              data-service-option
+              data-image="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80"
+              data-alt="Paint correction"
+            >
+              <div class="service-header">
+                <div>
+                  <p class="tag">Paint Correction</p>
+                  <h3>Bring back the showroom glow.</h3>
+                </div>
+                <span class="toggle-icon" aria-hidden="true"></span>
+              </div>
+              <p class="service-body">
+                We make tired paint look like new so your car returns with deep gloss, clarity, and show-ready reflections.
+              </p>
+            </button>
+          </div>
+        </div>
+        <div class="services-media">
+          <img
+            src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1400&q=80"
+            alt="Vinyl color change wrap"
+            data-service-image
+          />
+        </div>
+      </section>
+
+      <section class="stats" data-animate>
+        <div>
+          <strong>12,025</strong>
+          <p>Projects Completed</p>
+        </div>
+        <div>
+          <strong>1,050</strong>
+          <p>Dedicated Cleaners</p>
+        </div>
+        <div>
+          <strong>10,000</strong>
+          <p>Satisfied Clients</p>
+        </div>
+      </section>
+
+      <section class="packages" id="packages" data-animate>
+        <p class="eyebrow">2,187 people have already gone unlimited.</p>
+        <h2>Choose Your Package</h2>
+        <div class="package-grid">
+          <article class="package-card" data-animate>
+            <div class="package-header">
+              <p class="tag">Our Washes</p>
+              <h3>$39 <span>/visit</span></h3>
+            </div>
+            <ul>
+              <li>Free vacuums</li>
+              <li>Self-serve towels</li>
+              <li>Update at any club site</li>
+              <li>Wheel location add-ons</li>
+            </ul>
+            <button class="primary-btn">View Website</button>
+          </article>
+          <article class="package-card featured" data-animate>
+            <div class="package-header">
+              <p class="tag">Unlimited Club</p>
+              <h3>$89 <span>/month</span></h3>
+            </div>
+            <ul>
+              <li>Wash &amp; shine as often as you like</li>
+              <li>Foam bath + tire dressing</li>
+              <li>Monthly interior re-set</li>
+              <li>Member-only lounge &amp; Wi-Fi</li>
+            </ul>
+            <button class="primary-btn">View Website</button>
+          </article>
+          <article class="package-card" data-animate>
+            <div class="package-header">
+              <p class="tag">Unlimited Perks</p>
+              <h3>$129 <span>/month</span></h3>
+            </div>
+            <ul>
+              <li>Invite to limited club</li>
+              <li>Executive fleet service</li>
+              <li>Studio ceramic refresh</li>
+              <li>Quarterly paint inspection</li>
+            </ul>
+            <button class="primary-btn">View Website</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials" id="clients" data-animate>
+        <p class="eyebrow">2,187 clients have already loved the results.</p>
+        <h2>Our happy clients</h2>
+        <div class="testimonial-grid">
+          <article class="testimonial-card" data-animate>
+            <div class="stars">★★★★★</div>
+            <p>
+              “Amazing attention to detail. They removed stains I thought were
+              permanent and handed back a better-than-new cabin.”
+            </p>
+            <div class="author">
+              <img src="https://i.pravatar.cc/60?img=12" alt="Leslie Alexander" />
+              <div>
+                <strong>Leslie Alexander</strong>
+                <span>Model S owner</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card" data-animate>
+            <div class="stars">★★★★★</div>
+            <p>
+              “Booked their mobile ceramic service—punctual, professional, and
+              flawless gloss even after two months.”
+            </p>
+            <div class="author">
+              <img src="https://i.pravatar.cc/60?img=33" alt="Jacob Jones" />
+              <div>
+                <strong>Jacob Jones</strong>
+                <span>Studio Member</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card" data-animate>
+            <div class="stars">★★★★★</div>
+            <p>
+              “The unlimited plan means my work fleet always looks ready for
+              clients. Worth every cent.”
+            </p>
+            <div class="author">
+              <img src="https://i.pravatar.cc/60?img=5" alt="Jenny Wilson" />
+              <div>
+                <strong>Jenny Wilson</strong>
+                <span>Designer</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact" data-animate>
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark"></span>
+          <strong>Empire State Customz</strong>
+        </div>
+        <p>
+          <a href="https://www.empirestatecustomz.com">www.empirestatecustomz.com</a>
+          · Sydney’s leading indoor + mobile car customization collective.
+        </p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">@cardetailing</a>
+          <a href="#" aria-label="TikTok">@detailinglab</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div>
+          <p class="eyebrow">About</p>
+          <a href="#home">Our Story</a>
+          <a href="#services">Process</a>
+          <a href="#clients">Reviews</a>
+        </div>
+        <div>
+          <p class="eyebrow">Company</p>
+          <a href="#packages">Pricing</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+        </div>
+        <div>
+          <p class="eyebrow">Support</p>
+          <a href="#">Help Center</a>
+          <a href="#">Membership</a>
+          <a href="#">Accessibility</a>
+        </div>
+        <div>
+          <p class="eyebrow">Legal</p>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+        <div>
+          <p class="eyebrow">Get in touch</p>
+          <a href="mailto:hello@empirestatecustomz.com">hello@empirestatecustomz.com</a>
+          <a href="tel:+61488000800">+61 488 000 800</a>
+          <a href="#">247 Wynyard Street, Sydney</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.body.classList.add("enable-animations");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        document
+          .querySelectorAll("[data-animate]")
+          .forEach((element) => observer.observe(element));
+      } else {
+        document
+          .querySelectorAll("[data-animate]")
+          .forEach((element) => element.classList.add("is-visible"));
+      }
+
+      const serviceImage = document.querySelector("[data-service-image]");
+      const serviceOptions = document.querySelectorAll("[data-service-option]");
+      const navLinks = document.querySelectorAll("[data-nav-link]");
+      const navMenu = document.querySelector("[data-nav-menu]");
+      const menuToggle = document.querySelector("[data-menu-toggle]");
+      const navBackdrop = document.querySelector("[data-nav-backdrop]");
+
+      const swapServiceImage = (option) => {
+        if (!serviceImage || !option) return;
+        const newSrc = option.getAttribute("data-image");
+        const newAlt =
+          option.getAttribute("data-alt") ||
+          option.querySelector("h3")?.textContent ||
+          "Service photo";
+
+        if (!newSrc || serviceImage.src === newSrc) return;
+
+        serviceImage.style.opacity = "0";
+        const preloader = new Image();
+        preloader.onload = () => {
+          serviceImage.src = newSrc;
+          serviceImage.alt = newAlt;
+          requestAnimationFrame(() => {
+            serviceImage.style.opacity = "1";
+          });
+        };
+        preloader.src = newSrc;
+      };
+
+      if (serviceOptions.length) {
+        serviceOptions.forEach((option) => {
+          option.addEventListener("click", () => {
+            if (option.classList.contains("active")) return;
+            serviceOptions.forEach((item) => item.classList.remove("active"));
+            option.classList.add("active");
+            swapServiceImage(option);
+          });
+        });
+      }
+
+      const setActiveNav = (targetLink) => {
+        if (!targetLink) return;
+        navLinks.forEach((link) => link.classList.remove("is-active"));
+        targetLink.classList.add("is-active");
+      };
+
+      const closeNav = () => {
+        if (navMenu && menuToggle) {
+          navMenu.classList.remove("is-open");
+          menuToggle.classList.remove("is-active");
+          menuToggle.setAttribute("aria-expanded", "false");
+          navBackdrop?.classList.remove("is-open");
+          document.body.classList.remove("nav-open");
+        }
+      };
+
+      if (navLinks.length) {
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            setActiveNav(link);
+            closeNav();
+          });
+        });
+
+        const navSections = Array.from(navLinks)
+          .map((link) => {
+            const href = link.getAttribute("href");
+            if (!href || !href.startsWith("#")) return null;
+            const section = document.querySelector(href);
+            if (!section) return null;
+            return { section, link };
+          })
+          .filter(Boolean);
+
+        if (navSections.length) {
+          const navObserver = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  const active = navSections.find(
+                    (item) => item.section === entry.target
+                  );
+                  if (active) {
+                    setActiveNav(active.link);
+                  }
+                }
+              });
+            },
+            {
+              threshold: 0.4,
+            }
+          );
+
+          navSections.forEach(({ section }) => navObserver.observe(section));
+        }
+      }
+
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener("click", () => {
+          const isOpen = navMenu.classList.toggle("is-open");
+          menuToggle.classList.toggle("is-active", isOpen);
+          menuToggle.setAttribute("aria-expanded", String(isOpen));
+          if (navBackdrop) {
+            navBackdrop.classList.toggle("is-open", isOpen);
+          }
+          document.body.classList.toggle("nav-open", isOpen);
+        });
+
+        navBackdrop?.addEventListener("click", closeNav);
+      }
+
+      if (navBackdrop && !menuToggle) {
+        navBackdrop.addEventListener("click", closeNav);
+      }
+    </script>
+  </body>
+</html>
