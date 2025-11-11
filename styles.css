@@ -324,7 +324,7 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
   margin: -2rem auto 2rem;
-  padding: 2rem 4vw;
+  padding: 2rem;
   background: #0d0f14;
   color: #fff;
   border-radius: 32px;
@@ -816,6 +816,14 @@ main {
   margin: 0.25rem 0;
 }
 
+.contact-details {
+  margin-bottom: 1rem;
+}
+
+.contact-form .video-btn {
+  margin-top: 1rem;
+}
+
 .form-wrapper {
   min-height: 540px;
 }
@@ -1045,6 +1053,10 @@ body.enable-animations .is-visible {
 
   .hero {
     padding: 2rem 1.5rem 3rem;
+  }
+
+  .cred-strip {
+    margin: 1rem 5vw;
   }
 
   .intro {
