@@ -804,10 +804,12 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  padding: 3rem 4vw;
+  padding: 3rem;
   background: #f7f7fa;
   border-radius: 32px;
-  margin: 2rem 0;
+  margin: 2rem auto;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .contact-details p {
