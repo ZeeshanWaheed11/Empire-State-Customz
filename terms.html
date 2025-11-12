@@ -91,13 +91,16 @@
         </a>
       </div>
       <nav class="nav-links" id="primary-navigation" data-nav-menu>
+        <button type="button" class="nav-close mobile-only" aria-label="Close menu" data-menu-close>
+          ✕
+        </button>
         <a href="index.html#home" data-nav-link>Home</a>
         <a href="index.html#about" data-nav-link>About</a>
         <a href="index.html#services" data-nav-link>Services</a>
         <a href="index.html#packages" data-nav-link>Packages</a>
         <a href="index.html#clients" data-nav-link>Reviews</a>
         <a href="index.html#contact" data-nav-link>Contact</a>
-        <a href="index.html#packages" class="nav-link-cta mobile-only" data-nav-link>Manage Membership</a>
+        <a href="index.html#contact" class="nav-link-cta mobile-only" data-nav-link>Contact Us</a>
       </nav>
       <div class="nav-backdrop" data-nav-backdrop></div>
       <button
@@ -271,6 +274,7 @@
       const navMenu = document.querySelector("[data-nav-menu]");
       const menuToggle = document.querySelector("[data-menu-toggle]");
       const navBackdrop = document.querySelector("[data-nav-backdrop]");
+      const menuCloseButtons = document.querySelectorAll("[data-menu-close]");
 
       const setActiveNav = (targetLink) => {
         if (!targetLink) return;
@@ -297,6 +301,10 @@
         });
       }
 
+      if (menuCloseButtons.length) {
+        menuCloseButtons.forEach((button) => button.addEventListener("click", closeNav));
+      }
+
       if (menuToggle && navMenu) {
         menuToggle.addEventListener("click", () => {
           const isOpen = navMenu.classList.toggle("is-open");
@@ -309,6 +317,12 @@
         });
 
         navBackdrop?.addEventListener("click", closeNav);
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            closeNav();
+          }
+        });
       }
 
       if (navBackdrop && !menuToggle) {
