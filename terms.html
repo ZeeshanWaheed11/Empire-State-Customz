@@ -76,14 +76,16 @@
   </head>
   <body>
     <div class="announcement" data-animate>
-      <span>Book a car wash with the city's top-rated detail specialists.</span>
-      <button class="pill-btn">Book Now</button>
+      <span>Call Now: <a href="tel:+16318043295">+1 (631) 804-3295</a></span>
     </div>
 
     <header class="site-header" data-animate>
-      <div class="brand">
-        <span class="brand-mark"></span>
-        <strong>Empire State Customz</strong>
+      <div class="brand" aria-label="Empire State Customz">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0780/0376/5469/files/Logo.jpg?v=1762932505"
+          alt="Empire State Customz logo"
+          class="brand-logo"
+        />
       </div>
       <nav class="nav-links" id="primary-navigation" data-nav-menu>
         <a href="index.html#home" data-nav-link>Home</a>
@@ -107,7 +109,7 @@
         <span class="line line-middle"></span>
         <span class="line line-bottom"></span>
       </button>
-      <button class="ghost-btn">Manage Membership</button>
+      <button class="ghost-btn" onclick="location.href='index.html#contact'">Contact Us</button>
     </header>
 
     <main class="policy">
@@ -193,11 +195,14 @@
       <a class="back-link" href="index.html">← Back to Empire State Customz</a>
     </main>
 
-    <footer class="site-footer" id="contact" data-animate>
+    <footer class="site-footer" data-animate>
       <div class="footer-brand">
-        <div class="brand">
-          <span class="brand-mark"></span>
-          <strong>Empire State Customz</strong>
+        <div class="brand" aria-label="Empire State Customz">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0780/0376/5469/files/Logo.jpg?v=1762932505"
+            alt="Empire State Customz logo"
+            class="brand-logo"
+          />
         </div>
         <p>
           <a href="https://www.empirestatecustomz.com">www.empirestatecustomz.com</a>
@@ -212,9 +217,11 @@
       <div class="footer-links">
         <div>
           <p class="eyebrow">About</p>
-          <a href="index.html#home">Our Story</a>
-          <a href="index.html#services">Process</a>
-          <a href="index.html#clients">Reviews</a>
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#packages">Packages</a>
+          <a href="index.html#contact">Contact</a>
         </div>
         <div>
           <p class="eyebrow">Legal</p>
