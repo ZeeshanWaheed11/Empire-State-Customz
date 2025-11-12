@@ -70,8 +70,8 @@ footer {
   align-items: center;
   gap: 1rem;
   padding: 0.75rem 1.5rem;
-  background: #0f1115;
-  color: #fff;
+  background: #f1f2f4;
+  color: #0f1115;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
@@ -95,11 +95,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem 4vw;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(20px);
+  padding: 0.75rem 4vw;
+  min-height: 80px;
+  background: #000;
+  color: #fff;
   z-index: 10;
-  border-bottom: 1px solid rgba(15, 17, 21, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 .brand {
@@ -108,6 +110,18 @@ footer {
   gap: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.08em;
+}
+
+.brand-logo {
+  width: 110px;
+  height: 110px;
+  border-radius: 12px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.site-header .brand-logo {
+  margin: -24px 0;
 }
 
 .brand-mark {
@@ -126,6 +140,7 @@ footer {
 }
 
 .nav-links a {
+  color: rgba(255, 255, 255, 0.85);
   padding-bottom: 0.1rem;
   border-bottom: 2px solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
@@ -148,8 +163,8 @@ footer {
   width: 44px;
   height: 44px;
   border-radius: 999px;
-  border: 1px solid rgba(15, 17, 21, 0.2);
-  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.08);
   padding: 0;
   align-items: center;
   justify-content: center;
@@ -160,7 +175,7 @@ footer {
   position: absolute;
   width: 20px;
   height: 2px;
-  background: #0f1115;
+  background: #fff;
   transform-origin: center;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -198,16 +213,17 @@ footer {
 .ghost-btn {
   padding: 0.85rem 1.8rem;
   border-radius: 999px;
-  border: 1px solid rgba(15, 17, 21, 0.2);
-  background: transparent;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .ghost-btn:hover {
-  border-color: transparent;
-  background: var(--accent);
-  color: #fff;
+  border-color: var(--accent);
+  background: #fff;
+  color: var(--accent);
 }
 
 main {
@@ -771,6 +787,10 @@ main {
   text-align: center;
 }
 
+.testimonials p + .primary-btn {
+  margin-top: 1rem;
+}
+
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -829,12 +849,13 @@ main {
 }
 
 .site-footer {
-  background: #f4f5f7;
+  background: #000;
   border-radius: 40px 40px 0 0;
   padding: 3rem 5vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2.5rem;
+  color: #fff;
 }
 
 .footer-links {
@@ -845,8 +866,12 @@ main {
 
 .footer-links a {
   display: block;
-  color: rgba(15, 17, 21, 0.75);
+  color: rgba(255, 255, 255, 0.75);
   margin: 0.2rem 0;
+}
+
+.site-footer .eyebrow {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .socials {
@@ -981,10 +1006,10 @@ body.enable-animations .is-visible {
     width: min(80vw, 320px);
     height: 100vh;
     flex-direction: column;
-    background: #fff;
+    background: #000;
     padding: 5rem 1.75rem 2rem;
     gap: 1rem;
-    box-shadow: -20px 0 40px rgba(15, 17, 21, 0.2);
+    box-shadow: -20px 0 40px rgba(0, 0, 0, 0.6);
     transform: translateX(100%);
     opacity: 0;
     pointer-events: none;
@@ -1048,7 +1073,7 @@ body.enable-animations .is-visible {
   }
 
   .site-header {
-    padding: 1rem 5vw;
+    padding: 0.75rem 5vw;
   }
 
   .hero {
